@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.friendstracker.HomeScreen" >
+    
+    
+     <include 
+        android:id="@+id/layAction"
+        layout="@layout/custome_action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relative_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp" >
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/txtv_tracker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txtv_friends"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tracker"
+            android:textColor="@color/orange"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtv_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/image_logo"
+            android:text="@string/friends"
+            android:textColor="@color/orange"
+            android:textSize="30sp" />
+    </RelativeLayout>
+    
+    
+    
+    <RelativeLayout
+            android:id="@+id/login_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+          	android:layout_below="@+id/relative_logo">
+        	
+        		<RelativeLayout
+        	 		android:id="@+id/login_detalis"
+        	 		android:layout_width="wrap_content"
+        	 		android:layout_height="wrap_content"
+        	 		android:layout_centerInParent="true">
+            
+         				<EditText
+          				android:id="@+id/edit_userName"
+          				android:layout_width="match_parent"
+          				android:layout_height="wrap_content"
+          				android:layout_marginLeft="30dp"
+          				android:layout_marginRight="30dp"
+          				android:textColor="#cccccc"
+          				android:padding="5dp"
+          				android:drawableLeft="@drawable/user"
+          				android:background="@drawable/white_round_bg"
+          				android:hint="@string/username"/>
+      
+       					<EditText
+          				android:id="@+id/edit_password"
+          				android:layout_width="match_parent"
+          				android:layout_height="wrap_content"
+          				android:layout_below="@+id/edit_userName"
+          				android:padding="5dp"
+           				android:layout_marginTop="18dp"
+           				android:layout_marginLeft="30dp"
+          				android:layout_marginRight="30dp"
+           				android:drawableLeft="@drawable/password"
+           				android:inputType="textPassword"
+           				android:textColor="#cccccc"
+           				android:background="@drawable/white_round_bg"
+          				android:hint="@string/password"/> 
+ 				</RelativeLayout>     
+      	</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_layout2"
+        android:layout_marginBottom="20dp">
+        		
+        
+        
+        <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="1">
+       
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signin"
+            android:layout_weight="0.5"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rounded_button"/>
+        
+         <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rounded_button"/>
+        
+    </LinearLayout>
+
+      
+        <Button
+            android:id="@+id/btn_signupfacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          	 android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_button1"
+            android:text="@string/signupfacebook" />
+        
+    </RelativeLayout>
+   
+</RelativeLayout>

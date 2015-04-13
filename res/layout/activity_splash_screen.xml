@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.friendstracker.SplashScreen" >
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    
+    <ImageView
+        android:id="@+id/imgv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"/>
+    
+    <TextView
+        android:id="@+id/txtv_appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgv_logo"
+        android:text="@string/friends"
+        android:textColor="@color/orange"
+       	android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"/>
+    
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txtv_appName1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+    
+    <TextView
+        android:id="@+id/txtv_appName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtv_appName"
+        android:text="@string/tracker"
+        android:textColor="@color/orange"
+       	android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+       android:textSize="25sp"/>
+    
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/abt_indy"
+        android:textColor="#cccccc"
+       	android:textSize="15sp" />
+
+</RelativeLayout>
